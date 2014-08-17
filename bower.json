@@ -1,0 +1,27 @@
+{
+  "name": "animated-gif",
+  "version": "0.0.1",
+  "authors": [
+    "DrMabuse <pascalbrewing@googlemail.com>"
+  ],
+  "description": "animate images with a css3 loop",
+  "main": "animated-gif.js",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "keywords": [
+    "css3",
+    "jpeg"
+  ],
+  "license": "MIT",
+  "homepage": "pascal-brewing.de",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

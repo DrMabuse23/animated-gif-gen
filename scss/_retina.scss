@@ -1,0 +1,47 @@
+@function str-replace($string, $search, $replace) {
+  $length: str-length($replace);
+  $index: str-index($string, $search);
+  $slice: $string;
+  @return str-slice($slice, 0, $index - 1);
+}
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+@mixin retina( $object) {
+  $newpath:  str-replace(nth($object,9),'.png','');
+  @include sprite-position($object);
+  @include sprite-width($object);
+  @include sprite-height($object);
+  @include retina-image($newpath, nth($object,7) nth($object,8));
+  background-repeat: no-repeat;
+}
+$sprites : $maennle_1_1x,$maennle_2_1x,$maennle_3_1x,$maennle_4_1x,$maennle_5_1x,$maennle_6_1x,$maennle_7_1x,$maennle_8_1x,$maennle_9_1x,$maennle_10_1x;
+
+@for $i from 1 through 10 {
+  .blooms_#{$i} {
+    @include retina(nth($sprites,$i));
+    @debug nth($sprites,$i);
+  }
+}

@@ -1,0 +1,9 @@
+.idea
+.sass-cache
+.tmp
+images
+node_modules
+styles
+raw_images/blooms
+scss/_blooms_2x.scss
+scss/_blooms.scss

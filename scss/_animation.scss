@@ -1,0 +1,90 @@
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+.animate-gif {
+  position: relative;
+  width: $maennle_10_1x-width;
+  height: $maennle_10_1x-height;
+  @include animation(play .8s steps(10) infinite);
+
+  @include sprite-image($maennle_1_1x);
+}
+
+@include keyframes(fadeIn) {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@include keyframes(play){
+  from { background-position:    0px; }
+  to { background-position: -500px; }
+}
+@include keyframes(spin) {
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 0.2;
+  }
+  20%{
+    opacity: 0.4;
+  }
+  30%{
+    opacity: 0.6;
+  }
+  40%{
+    opacity: 0.8;
+  }
+  50%{
+    opacity: 1.0;
+  }
+  60%{
+    opacity: 0.8;
+  }
+  70%{
+    opacity: 0.6;
+  }
+  80%{
+    opacity: 0.4;
+  }
+  90%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 0;
+  }
+
+}
+
+@for $i from 1 through 10 {
+
+  .step:nth-child(#{$i}) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    @if($i == 1){
+      opacity: 1;
+    }@else {
+      opacity: 0;
+    }
+    z-index: 100+$i;
+    @include animation(play .8s steps(10) infinite);
+//    @include animation-name(spin);
+//    @include animation-play-state(5);
+//    @include animation-delay(#{$i}s);
+//    @include animation-duration(#{$i}s);
+////    @include animation-direction(alternate-reverse);
+//    @include animation-iteration-count(infinite);
+  }
+//  .step:nth-child(#{$i}) {
+//    @include animation-name(fadeOut);
+//    @include animation-delay(#{$i*1.4}s);
+//    @include animation-duration(#{$i*1.4}s);
+//    @include animation-iteration-count(infinite);
+//  }
+
+}

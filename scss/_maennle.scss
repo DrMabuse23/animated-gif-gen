@@ -1,0 +1,147 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+*/
+$maennle_10_1x-x: 0px;
+$maennle_10_1x-y: 0px;
+$maennle_10_1x-offset-x: 0px;
+$maennle_10_1x-offset-y: 0px;
+$maennle_10_1x-width: 50px;
+$maennle_10_1x-height: 72px;
+$maennle_10_1x-total-width: 500px;
+$maennle_10_1x-total-height: 72px;
+$maennle_10_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_10_1x: 0px 0px 0px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_1_1x-x: 50px;
+$maennle_1_1x-y: 0px;
+$maennle_1_1x-offset-x: -50px;
+$maennle_1_1x-offset-y: 0px;
+$maennle_1_1x-width: 50px;
+$maennle_1_1x-height: 72px;
+$maennle_1_1x-total-width: 500px;
+$maennle_1_1x-total-height: 72px;
+$maennle_1_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_1_1x: 50px 0px -50px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_2_1x-x: 100px;
+$maennle_2_1x-y: 0px;
+$maennle_2_1x-offset-x: -100px;
+$maennle_2_1x-offset-y: 0px;
+$maennle_2_1x-width: 50px;
+$maennle_2_1x-height: 72px;
+$maennle_2_1x-total-width: 500px;
+$maennle_2_1x-total-height: 72px;
+$maennle_2_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_2_1x: 100px 0px -100px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_3_1x-x: 150px;
+$maennle_3_1x-y: 0px;
+$maennle_3_1x-offset-x: -150px;
+$maennle_3_1x-offset-y: 0px;
+$maennle_3_1x-width: 50px;
+$maennle_3_1x-height: 72px;
+$maennle_3_1x-total-width: 500px;
+$maennle_3_1x-total-height: 72px;
+$maennle_3_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_3_1x: 150px 0px -150px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_4_1x-x: 200px;
+$maennle_4_1x-y: 0px;
+$maennle_4_1x-offset-x: -200px;
+$maennle_4_1x-offset-y: 0px;
+$maennle_4_1x-width: 50px;
+$maennle_4_1x-height: 72px;
+$maennle_4_1x-total-width: 500px;
+$maennle_4_1x-total-height: 72px;
+$maennle_4_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_4_1x: 200px 0px -200px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_5_1x-x: 250px;
+$maennle_5_1x-y: 0px;
+$maennle_5_1x-offset-x: -250px;
+$maennle_5_1x-offset-y: 0px;
+$maennle_5_1x-width: 50px;
+$maennle_5_1x-height: 72px;
+$maennle_5_1x-total-width: 500px;
+$maennle_5_1x-total-height: 72px;
+$maennle_5_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_5_1x: 250px 0px -250px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_6_1x-x: 300px;
+$maennle_6_1x-y: 0px;
+$maennle_6_1x-offset-x: -300px;
+$maennle_6_1x-offset-y: 0px;
+$maennle_6_1x-width: 50px;
+$maennle_6_1x-height: 72px;
+$maennle_6_1x-total-width: 500px;
+$maennle_6_1x-total-height: 72px;
+$maennle_6_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_6_1x: 300px 0px -300px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_7_1x-x: 350px;
+$maennle_7_1x-y: 0px;
+$maennle_7_1x-offset-x: -350px;
+$maennle_7_1x-offset-y: 0px;
+$maennle_7_1x-width: 50px;
+$maennle_7_1x-height: 72px;
+$maennle_7_1x-total-width: 500px;
+$maennle_7_1x-total-height: 72px;
+$maennle_7_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_7_1x: 350px 0px -350px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_8_1x-x: 400px;
+$maennle_8_1x-y: 0px;
+$maennle_8_1x-offset-x: -400px;
+$maennle_8_1x-offset-y: 0px;
+$maennle_8_1x-width: 50px;
+$maennle_8_1x-height: 72px;
+$maennle_8_1x-total-width: 500px;
+$maennle_8_1x-total-height: 72px;
+$maennle_8_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_8_1x: 400px 0px -400px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+$maennle_9_1x-x: 450px;
+$maennle_9_1x-y: 0px;
+$maennle_9_1x-offset-x: -450px;
+$maennle_9_1x-offset-y: 0px;
+$maennle_9_1x-width: 50px;
+$maennle_9_1x-height: 72px;
+$maennle_9_1x-total-width: 500px;
+$maennle_9_1x-total-height: 72px;
+$maennle_9_1x-image: '../images/layout/maennle_sprite.png';
+$maennle_9_1x: 450px 0px -450px 0px 50px 72px 500px 72px '../images/layout/maennle_sprite.png';
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
