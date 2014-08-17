@@ -1,12 +1,12 @@
 animated-gif-gen
 ================
 
-bower install
-npm install
-gem install sass
-gem install bourbon
+    bower install
+    npm install
+    gem install sass
+    gem install bourbon
 
-grunt
+    grunt
 
 open index.html
 
