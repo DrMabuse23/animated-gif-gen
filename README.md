@@ -10,3 +10,4 @@ animated-gif-gen
 
 open index.html
 
+![](http://pascal-brewing.de/img/works-on-my-machine.png)
